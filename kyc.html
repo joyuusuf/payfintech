@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYBUDDIES KYC</title>
+    <link rel="stylesheet" href="./kyc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="kyc-container">
+
+
+        <div class="kyc-left-section">
+
+            <div>
+
+
+                <img src="./images/logo.png" class="main-logo" alt="logo">
+
+                <div>
+                    <img src="./images/kyc-img.jpg" class="left-image" alt="Illustration Image">
+                </div>
+
+                <div class="left-bottom-container">
+
+                    <div class="kyc-left-footer">
+                        <div>&copy; PAYBUDDIES 2024</div>
+                        <div class="left-bottom-link">
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div>
+                <div class="mobile-logo-container">
+                    <!-- <img src="./images/logo.png" class="mobile-logo" alt="logo"> -->
+                    <!-- <img src="./images/second-img.png" class="second-image" alt=""> -->
+                </div>
+
+                <div class="form-container">
+                    <div class="mobile-logo-container">
+                        <img src="./images/logo.png" class="mobile-logo" alt="logo">
+                    </div>
+
+                    <div class="login-section">
+                        <h1 class="login-header">KYC Setup</h1>
+                        <p class="login-description">You are almost done, input your KYC below</p>
+
+                        <form id="userForm">
+                            <label for="homeAddress">Home Address</label>
+                            <input type="text" id="homeAddress" placeholder="Enter home address" class="textInput" required>
+
+                            <label for="country">Country</label>
+                            <select id="country" required>
+                                <option value="">Select Country</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+
+                            <label for="state">State</label>
+                            <select id="state" required>
+                                <option value="">Select State</option>
+                                <option value="California">California</option>
+                                <option value="Texas">Texas</option>
+                            </select>
+
+                            <label for="city">City</label>
+                            <select id="city" required>
+                                <option value="">Select City</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="San Francisco">San Francisco</option>
+                            </select>
+
+                            <label>Utility Bill</label>
+                            <label for="utilityBillUpload" class="upload-label">
+                                Upload Utility Bill
+                            </label>
+                            <input type="file" id="utilityBillUpload" class="file-input" required />
+
+                            <p id="fileNameDisplay" class="file-name-display"></p>
+
+                            <label for="dateOfBirth">Date Of Birth</label>
+                            <input type="date" id="dateOfBirth" required>
+
+                            <label for="gender">Gender</label>
+                            <select id="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+
+                            <label for="occupation">Occupation</label>
+                            <input type="text" id="occupation" placeholder="Occupation" required>
+
+                            <button type="button" class="submit-button" onclick="ValidateKyc()" disabled>Next</button>
+
+                        </form>
+
+
+                    </div>
+
+
+
+
+                    <div class=" mobile">
+                        <div>
+                            <p>&copy; PAYBUDDIES 2024</p>
+                        </div>
+                        <div>
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="./kyc.js"></script>
+</body>
+
+</html>
