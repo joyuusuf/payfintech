@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYBUDDIES KYC</title>
+    <link rel="stylesheet" href="./upload-document.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="kyc-container">
+
+
+        <div class="kyc-left-section">
+
+            <div>
+
+
+                <img src="./images/logo.png" class="main-logo" alt="logo">
+
+                <div>
+                    <img src="./images/create-account-left-img.jpg" class="left-image" alt="Illustration Image">
+                </div>
+
+                <div class="left-bottom-container">
+
+                    <div class="kyc-left-footer">
+                        <div>&copy; PAYBUDDIES 2024</div>
+                        <div class="left-bottom-link">
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div>
+
+                <div class="form-container">
+                    <div class="mobile-logo-container">
+                        <img src="./images/logo.png" class="mobile-logo" alt="logo">
+                    </div>
+
+                    <div class="login-section">
+                        <h1 class="login-header">Upload Document</h1>
+                        <div class="login-navigate">
+                            <p class="login-description">You are almost done, input your KYC below</p>
+                           
+                        </div>
+                        <p class="upload-text">Select mode of verification</p>
+                        <form class="userForm">
+
+                            <div class="first-form-row">
+                                <label for="country">Country</label>
+                    <select id="country">
+                        <option id="countrySelect">Select Country</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">United Kingdom</option>
+                    </select>
+
+
+                    <div class="input-container">
+                        <input type="radio" id="studentId" name="verification" class="radio-input">
+                        <input type="select" id="textInput" placeholder="Student ID Card" class="text-input" disabled>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="radio" id="passport" name="verification" class="radio-input">
+                        <input type="select" id="textInput" placeholder="International Passport" class="text-input"
+                            disabled>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="radio" id="driverLicense" name="verification" class="radio-input">
+                        <input type="select" id="textInput" placeholder="Driver's License" class="text-input" disabled>
+                    </div>
+
+
+                    <div class="input-container">
+                        <input type="radio" id="voterCard" name="verification" class="radio-input">
+                        <input type="select" id="textInput" placeholder="Voter's Card" class="text-input" disabled>
+                    </div>
+
+
+                    <div class="input-container">
+                        <input type="radio" id="digitalNin" name="verification" class="radio-input">
+                        <input type="select" id="textInput" placeholder="Digital NIN Slip" class="text-input" disabled>
+                    </div>
+
+
+                    <div class="input-container">
+                        <input type="radio" id="ninSlip" name="verification" class="radio-input">
+                        <input type="select" id="textInput" placeholder="NIN Slip" class="text-input" disabled>
+                    </div>
+                    <button id="proceedButton" disabled>Proceed</button>
+                        </form>
+
+                    </div>
+
+                    <div class=" mobile">
+                        <div>
+                            <p>&copy; PAYBUDDIES 2024</p>
+                        </div>
+                        <div>
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="upload-document.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 
 function selfieCamera() {
-    window.location.href = "videoselfie.html"
+    window.location.href = "video.html"
 }
 
 
