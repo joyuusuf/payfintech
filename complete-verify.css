@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Tw Cen MT";
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 60px 50px 72px;
+    /* width: 70%; */
+}
+
+.left-bottom-container {
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    gap: 20px;
+    position: relative;
+    bottom: 8px;
+}
+
+.left-bottom a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #353535;
+    font-weight: 400;
+}
+
+.left-bottom-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    gap: 15px;
+    margin-left: 100px;
+}
+
+.logo {
+    width: fit-content;
+    height: 48px;
+    align-self: baseline;
+    margin-bottom: 30px;
+}
+
+.mockup {
+    width: 500px;
+    height: 500px;
+}
+
+.left-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* width: 100%; */
+    text-align: left;
+}
+
+.left-bottom a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #353535;
+    font-weight: 400;
+}
+
+.mobile {
+    display: none;
+}
+
+.left-bottom-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+}
+
+.left-bottom p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+}
+
+.right {
+    background: url("./assets/icon/right-bg.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px 30px;
+    width: 70%;
+    box-shadow: 0px 0px 14.9px 1px #1111110D;
+}
+
+.flyover {
+    display: none;
+}
+
+.right h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #353535;
+}
+
+.right-top p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+    margin-top: 10px;
+}
+
+.input-div {
+    margin-bottom: 100px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+}
+
+.pin-input {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+}
+
+.pin-input.active {
+    border: 1px solid #E6E6E6;
+}
+
+.pin-input:focus {
+    border: 1px solid #CC33CC;
+    outline: none;
+}
+
+.alert {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.alert p {
+    font-size: 10px;
+    font-weight: 400;
+    color: #C91301;
+}
+
+.right-bottom {
+    width: 100%;
+}
+
+.right-bottom p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666B2;
+}
+
+.resend a {
+    color: #CC33CC;
+    cursor: pointer;
+}
+
+.button {
+    padding: 12px 16px;
+    width: 100%;
+    background-color: #CC33CC;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 1;
+    margin-top: 30px;
+    margin: 10px;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.check img {
+    width: 150px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 5px;
+    width: 100%;
+}
+
+.email input {
+    border: 1px solid #CC33CC;
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+    height: 50px;
+}
+
+.email input:focus {
+    border: 2px solid #CC33CC;
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    /* margin-bottom: 15px; */
+}
+
+.login {
+    font-size: 14px;
+}
+
+.reset {
+    width: 70%;
+}
+
+.right-bottom h3 {
+    color: #808080;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.asteriks {
+    color: #C91301;
+}
+
+.input-holder {
+    width: 100%;
+    position: relative;
+}
+
+.input-holder img {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    cursor: pointer;
+}
+
+
+/* responsiveness style for mobile */
+
+@media (max-width: 900px) {
+    .left {
+        display: none;
+    }
+    body {
+        background: url("./assets/icon/right-bg.jpg");
+        overflow-y: hidden;
+    }
+    .right {
+        background: none;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .right>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        border-radius: 4px;
+        width: 100%;
+        background: none;
+    }
+    .input-div {
+        margin-bottom: 10px;
+    }
+    .pin-input {
+        width: 40px;
+        height: 40px;
+    }
+    .flyover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 380px; */
+        /* height: 20px; */
+        margin-bottom: 5px;
+    }
+    .mobile-logo {
+        width: 161px;
+        height: 30px;
+        /* margin-bottom: -30px; */
+    }
+    .right-top p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #808080;
+    }
+    .left-bottom-link {
+        display: flex;
+        justify-content: right;
+        text-align: right;
+    }
+    .footer-right-link {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 14px;
+        color: #353535;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        gap: 55px;
+        color: #353535;
+        font-weight: 400;
+        font-size: 12px;
+        position: fixed;
+        bottom: 10px;
+    }
+    .mobile a {
+        text-decoration: none;
+        color: #353535;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .mobile div {
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+        font-size: 12px;
+    }
+}
