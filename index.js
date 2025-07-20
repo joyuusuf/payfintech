@@ -171,7 +171,7 @@ copyright.textContent = year;
 //  Sign Up Button on the navbar
 
 function signUp() {
-    window.location.href = "create-account.html"
+    window.location.href = "sign-up.html"
 }
 
 
