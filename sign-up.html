@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    
+</head>
+
+<body>
+
+    <divn class="kyc-container">
+
+
+
+        <div class="kyc-left-section">
+
+            <div>
+
+
+                <img src="./images/logo.png" class="main-logo" alt="logo">
+
+                <div>
+                    <img src="./images/create-acct-new-illustration.jpg" class="left-image" alt="Illustration Image">
+                </div>
+
+                <div class="left-bottom-container">
+
+                    <div class="kyc-left-footer">
+                        <div>&copy; PAYBUDDIES 2024</div>
+                        <div class="left-bottom-link">
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div>
+
+                <div class="form-container">
+                    <div class="mobile-logo-container">
+                        <img src="./images/logo.png" class="mobile-logo" alt="logo">
+                    </div>
+
+                    <div class="login-section">
+                        <h1 class="login-header">Create Account</h1>
+                        <div class="login-navigate">
+                            <p class="login-description">Already have an account? <a href="login.html">Log In</a></p>
+
+                        </div>
+
+                        <form class="userForm">
+                            <div class="first-form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First name <span class="required">*</span></label>
+                                    <input type="text" id="firstName" placeholder="Enter first name">
+                                    <div id="firstNameError" class="error-message"></div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last name <span class="required">*</span></label>
+                                    <input type="text" id="lastName" placeholder="Enter last name">
+                                    <div id="lastNameError" class="error-message"></div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="middleName">Middle name <span class="required">*</span></label>
+                                    <input type="text" id="middleName" placeholder="Enter middle name">
+                                    <div id="middleNameError" class="error-message"></div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="dob">Date of birth <span class="required">*</span></label>
+                                    <input type="date" id="dob" class="dob-input" placeholder="DD | MM | YYYY">
+                                    <div id="dobError" class="error-message"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bvn">BVN number <span class="required">*</span></label>
+                                <input type="number" id="bvn" placeholder="Enter your BVN number">
+                                <div id="bvnError" class="error-message"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone number <span class="required">*</span></label>
+                                <div class="phone-input">
+                                    <div class="country-select-wrapper">
+                                        <img id="country-flag" src="https://flagcdn.com/ng.svg" alt="Nigeria flag"
+                                            class="flag-image" />
+                                        <div class="custom-select-container">
+                                            <select id="country-select">
+                                                <option value="+234" data-flag="https://flagcdn.com/ng.svg">+234
+                                                </option>
+                                                <option value="+1" data-flag="https://flagcdn.com/us.svg">+1
+                                                </option>
+                                                <option value="+44" data-flag="https://flagcdn.com/gb.svg">+44
+                                                </option>
+                                            </select>
+                                            <span class="custom-arrow">&#9662;</span>
+                                        </div>
+                                    </div>
+                                    <input type="number" id="phone" placeholder="8123456789">
+
+                                </div>
+                                <div id="phoneError" class="error-message"></div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" placeholder="johndoe@email.com">
+
+                                <div id="emailError" class="error-message"></div>
+
+                            </div>
+                            <div class="form-group password-group">
+                                <label for="password">Password <span class="required">*</span></label>
+                                <input type="password" id="password" placeholder="Enter strong password">
+                                <i class="toggle-password fa-solid fa-eye" onclick="togglePassword()"></i>
+                            </div>
+                            <div id="passwordError" class="error-message"></div>
+
+
+                            <div class="form-group password-group">
+                                <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+                                <input type="password" id="confirmPassword" placeholder="Re-enter password">
+                                <i class="confirm-toggle-password fa-solid fa-eye" onclick="changePassword()"></i>
+                            </div>
+                            <div id="confirmPasswordError" class="error-message"></div>
+
+
+
+
+                            <div class="form-group">
+                                <label for="referral">Referral code (optional)</label>
+                                <input type="number" id="referral" placeholder="#1234567">
+                                <div id="referralError" class="error-message"></div>
+
+                            </div>
+
+                            <button onclick="validateForm()" class="submit-button">Create account</button>
+                        </form>
+
+                    </div>
+
+                    <div class=" mobile">
+                        <div>
+                            <p>&copy; PAYBUDDIES 2024</p>
+                        </div>
+                        <div>
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
