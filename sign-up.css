@@ -700,7 +700,7 @@ button:disabled {
         background: none;
         left: 50%;
         transform: translateX(-50%);
-        top: calc(30% - 420px/2);
+        top: calc(37% - 420px/2);
     }
     .first-form-row {
         display: flex;

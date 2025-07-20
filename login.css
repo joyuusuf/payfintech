@@ -39,6 +39,7 @@ body {
     gap: 20px;
     position: relative;
     bottom: 13px;
+    padding: 17px;
 }
 
 .left-bottom a {
