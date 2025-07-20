@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Tw Cen MT";
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.kyc-container {
+    display: flex;
+    height: 100vh;
+    max-width: auto;
+}
+
+.kyc-left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 60px 50px 72px;
+    width: 70%;
+}
+
+.main-logo {
+    width: fit-content;
+    height: 48px;
+    align-self: baseline;
+    margin-bottom: 30px;
+}
+
+.left-image {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.left-bottom-container {
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-bottom-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    gap: 15px;
+    margin-left: 100px;
+}
+
+.kyc-left-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+
+.mobile {
+    display: none;
+}
+
+.kyc-left-footer,
+a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    text-decoration: none;
+}
+
+.right-section {
+    background: url("./images/right-bg.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.right>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px 30px;
+    width: 70%;
+    /* max-width: 400px; */
+}
+
+.flyover {
+    display: none;
+}
+
+.form-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px 20px;
+    position: absolute;
+    width: 520px;
+    left: calc(52% - 560px/2);
+    top: calc(38% - 420px/2);
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 0px 14.9px 1px #1111110D;
+    text-align: center;
+}
+
+.login-header {
+    font-family: "Tw Cen MT";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    color: #353535;
+    gap: 10px;
+}
+
+.login-description {
+    font-family: "Tw Cen MT";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* margin-top: 10px; */
+    text-align: center;
+    color: #808080;
+}
+
+.verify-description {
+    font-family: "Tw Cen MT";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    text-align: center;
+    color: #808080;
+}
+
+.getVerified {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #353535;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-footer {
+    margin-top: 90px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #353535;
+}
+
+.video-footer a {
+    text-decoration: none;
+    color: #CC33CC;
+}
+
+form {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upload-text-id {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    color: #353535;
+    margin-top: 33px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.country {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id-template {
+    height: 260px;
+    width: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.back-image-container {
+    display: none;
+}
+
+.upload-footer-description {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    list-style: 24px;
+    color: #353535;
+    margin-top: 35px;
+}
+
+.attach-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.attach-btn {
+    background-color: #FFFFFF;
+    color: #CC33CC;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+    width: 255px;
+    height: 50px;
+    border: 1px solid #CC33CC;
+    border-radius: 8px;
+}
+
+.proceed-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+    width: 255px;
+    height: 50px;
+    background: #CC33CC;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.attachbtn-proceed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+    width: 255px;
+    height: 50px;
+    background: #CC33CC;
+    border-radius: 8px;
+}
+
+.mobile-logo-container {
+    display: none;
+}
+
+.success-img {
+    width: 330px;
+    height: 330px;
+}
+
+button {
+    padding: 12px 16px;
+    width: 100%;
+    background: #CC33CC;
+    border-radius: 8px;
+    border: none;
+    font-family: "Tw Cen MT";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    opacity: 1;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.footer-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-message p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666B2;
+}
+
+.footer-message a {
+    width: 111px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #CC33CC;
+}
+
+
+/* responsiveness style for mobile */
+
+@media (max-width: 576px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Tw Cen MT";
+    }
+    .kyc-left-section {
+        display: none;
+    }
+    .main-logo {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    .mobile-logo-container {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-container {
+        width: 100%;
+        padding: 20px;
+        left: 50%;
+        background: none;
+        top: calc(35% - 420px/2);
+    }
+    .success-img {
+        width: 150px;
+        height: 150px;
+    }
+    .first-form-row,
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .submit-button {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    .footer-message p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kyc-left-section {
+        display: none;
+    }
+    .kyc-container {
+        background: url("./images/right-bg.jpg") no-repeat;
+        background-size: cover;
+    }
+    .right-section {
+        background: url("./images/right-bg.jpg") no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .form-container {
+        background: none;
+        height: 100%;
+        top: calc(35% - 420px/2);
+    }
+    .mobile-logo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 1000px; */
+    }
+    .mobile-logo {
+        display: flex;
+        justify-content: center;
+        width: 161px;
+        height: 30px;
+    }
+    .success-img {
+        width: 150px;
+        height: 150px;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 70px;
+        color: #353535;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .mobile a {
+        text-decoration: none;
+        color: #353535;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .mobile div {
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+        font-size: 12px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Tw Cen MT";
+    }
+    .kyc-left-section {
+        display: none;
+    }
+    .form-container {
+        background: none;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(35% - 420px/2);
+    }
+    .mobile-logo-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-logo {
+        width: 161px;
+    }
+}
