@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYBUDDIES KYC</title>
+    <link rel="stylesheet" href="./verifyemail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="kyc-container">
+
+
+        <div class="kyc-left-section">
+
+            <div>
+
+
+                <img src="./images/logo.png" class="main-logo" alt="logo">
+
+                <div>
+                    <img src="./images/new-verify-email-img.jpg" class="left-image" alt="Illustration Image">
+                </div>
+
+                <div class="left-bottom-container">
+
+                    <div class="kyc-left-footer">
+                        <div>&copy; PAYBUDDIES 2024</div>
+                        <div class="left-bottom-link">
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div>
+
+                <div class="form-container">
+                    <div class="mobile-logo-container">
+                        <img src="./images/logo.png" class="mobile-logo" alt="logo">
+                    </div>
+
+                    <div class="login-section">
+                        <h1 class="login-header">Verify your Email</h1>
+                        <div class="login-navigate">
+                            <p class="login-description">Please enter the OTP sent to the email address you provided</p>
+
+                        </div>
+
+                        <div class="input-div">
+                            <div class="inputs">
+                                <input type="text" maxlength="1" class="pin-input" id="pin1" oninput="moveForward(this, 'pin2')">
+                                <input type="text" maxlength="1" class="pin-input" id="pin2" oninput="moveForward(this, 'pin3')" onkeydown="moveBackward(event, 'pin1')">
+                                <input type="text" maxlength="1" class="pin-input" id="pin3" oninput="moveForward(this, 'pin4')" onkeydown="moveBackward(event, 'pin2')">
+                                <input type="text" maxlength="1" class="pin-input" id="pin4" oninput="moveForward(this, 'pin5')" onkeydown="moveBackward(event, 'pin3')">
+                                <input type="text" maxlength="1" class="pin-input" id="pin5" oninput="moveForward(this, 'pin6')" onkeydown="moveBackward(event, 'pin4')">
+                                <input type="text" maxlength="1" class="pin-input" id="pin6" onkeydown="moveBackward(event, 'pin5')">
+                            </div>
+                            <div class="alert">
+                                <img src="./assets/icon/alert.png" alt="alert icon">
+                                <p>Invalid otp. Enter the otp sent to johndoe123@email.com</p>
+                            </div>
+                        </div>
+
+                        <div class="right-bottom">
+                            <p>Didn`t receive OTP? <span class="resend"><a href="">Resend code</a></span></p>
+
+                            <a href="./complete-verify.html"><button type="submit" id="verifyBtn" class="button"
+                                    disabled>Verify
+                                    email</button></a>
+                        </div>
+                    </div>
+
+                    <div class=" mobile">
+                        <div>
+                            <p>&copy; PAYBUDDIES 2024</p>
+                        </div>
+                        <div>
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="verify.js"></script>
+</body>
+
+</html>
