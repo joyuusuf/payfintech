@@ -256,7 +256,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    line-height: 19.36px;
+    /* line-height: 19.36px; */
     text-align: center;
 }
 
