@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYBUDDIES KYC</title>
+    <link rel="stylesheet" href="./kycverify.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <div class="kyc-container">
+
+
+        <div class="kyc-left-section">
+
+            <div>
+
+
+                <img src="./images/logo.png" class="main-logo" alt="logo">
+
+                <div>
+                    <img src="./images/kyc-img.jpg" class="left-image" alt="Illustration Image">
+                </div>
+
+                <div class="left-bottom-container">
+
+                    <div class="kyc-left-footer">
+                        <div>&copy; PAYBUDDIES 2024</div>
+                        <div class="left-bottom-link">
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div>
+
+                <div class="form-container">
+                    <div class="mobile-logo-container">
+                        <img src="./images/logo.png" class="mobile-logo" alt="logo">
+                    </div>
+
+                    <div class="login-section">
+                        <h1 class="login-header">Let’s Verify Your Identity</h1>
+                        <p class="login-description">You are almost done, input your KYC below</p>
+                        <p class="getVerified">To get Verified, you will need to</p>
+
+                        <form id="userForm">
+                            <div class="camera-container" onclick="selfieCamera()">
+                                <span class="material-symbols-outlined">photo_camera</span>
+                                <div>
+                                    <p class="record-video">Record Video</p>
+                                    <p class="record-video-text">Record a short selfie video with good lighting</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="camera-container" onclick="UploadDocument()">
+                                <span class="material-symbols-outlined">cloud_upload</span>
+                                <div>
+                                    <p class="record-video">Upload Documents</p>
+                                    <p class="record-video-text">Upload photos of documents proving your identity</p>
+                                </div>
+                            </div>
+        
+        
+                            <!-- <div id="videoContainer" style="display: none;">
+                                <video id="cameraVideo" autoplay muted></video>
+                                <button onclick="startRecording()">Start Recording</button>
+                                <button onclick="stopRecording()">Stop Recording</button>
+                            </div> -->
+        
+                            <!-- File Input for Document Upload -->
+                            <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf" multiple
+                                onchange="handleFileSelect(event)" />
+        
+                            <!-- File Preview Section -->
+                            <!-- <div id="filePreviewContainer"></div> -->
+        
+                            <div class="video-footer">
+                                <p>
+                                    By Clicking on Start, you agree to the <a href="termsofuse.html">Terms of Service </a>
+                                    <br> and <a href="privacypolicy.html">Privacy Policy</a>
+                                </p>
+                            </div>
+                                    <button type="button" class="submit-button">Start</button>
+
+                        </form>
+
+                    </div>
+
+                    <div class=" mobile">
+                        <div>
+                            <p>&copy; PAYBUDDIES 2024</p>
+                        </div>
+                        <div>
+                            <a href="#">Help Center</a>
+                            <a href="termsofuse.html">Terms of Service</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="./kycverify.js"></script>
+</body>
+
+</html>
