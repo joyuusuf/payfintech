@@ -12,6 +12,68 @@
 
 </head>
 <body>
-    
+    <div class="left">
+          <img src="./assets/icon/Logo.png" class="logo" alt="logo">
+        <div>
+            <img src="./images/login-illustration.jpg" class="mockup" alt="image">
+        </div>
+        <div class="left-bottom">
+
+            <div>&copy; PAYBUDDIES 2024 </div>
+
+            <div class="left-bottom-link">
+                <a href="#">Help Center</a>
+                <a href="termsofuse.html">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div>
+            <div class="flyover">
+                <img src="./assets/icon/Logo.png" class="mobile-logo" alt="logo">
+            </div>
+            <div class="right-top">
+                <h2>Log In</h2>
+                <p>Log in to take control of your finances today.</p>
+            </div>
+            <div class="login-section">
+                <form id="userForm">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" class="email-input">
+                    <div id="emailError" class="error-message"></div>
+
+                    <label for="Password">Password</label>
+                    <div class="password-container">
+                        <input type="password" name="password" id="password" placeholder="Enter your password">
+                        <i class="toggle-password fa-solid fa-eye" onclick="togglePassword()"></i>
+                    </div>
+                    <div id="passwordError" class="error-message"></div>
+                </form>
+
+
+                <div class="button-section">
+                    <button onclick="LogIn()">Login</button>
+                    <span class="password-reset">
+                        <p>Forgot password? <a href="reset-password.html">Reset here</a></p>
+
+                    </span>
+                </div>
+
+                <div class="footer-message">
+                    <p>Don’t have an account? <span><a href="create-account.html">Create account</a></span></p>
+                </div>
+            </div>
+            <div class="left-bottom mobile">
+                <p>&copy; PAYBUDDIES <span class="copyright"></span>2024</p>
+                <div class="footer-right-link">
+                    <a href="#">Help Center</a>
+                    <a href="termsofuse.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./login.js"></script>
 </body>
 </html>
