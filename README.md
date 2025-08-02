@@ -18,3 +18,18 @@ It simulates core financial services such as sending and receiving money, viewin
 - JavaScript – For UI interactivity and dynamic updates
 
 
+ Getting Started
+
+To view or test the project locally:
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/joyuusuf/payfintech.git
+
+
+2. Open index.html in your browser.
+
+   No installations or dependencies are required since it’s a pure frontend project.
+
+Note
+This is a frontend-only simulation of a fintech product and does not include backend functionalities like authentication or real-time transactions.
